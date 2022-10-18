@@ -8,14 +8,19 @@ import closeIcon from "../../img/close.png"
 let socket;
 const ENDPOINT = "https://demo-message-app.herokuapp.com/"
 const Chat = () => {
+  
   const [id, setId] = useState("")
   const [messages, setMessages] = useState([])
+
+
   const send = () => {
     const message = document.getElementById("chatInput").value;
     socket.emit('message', { message, id });
     document.getElementById("chatInput").value = "";
   }
   console.log(messages)
+
+
   useEffect(() => {
 
     socket = socketIo(ENDPOINT, { transports: ['websocket'] })

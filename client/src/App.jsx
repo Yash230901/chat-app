@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Join from "./components/Join/Join.js"
 import Chat from "./components/Chat/Chat.js"
 import  "./App.css"

@@ -1,7 +1,6 @@
 .joinPage{
-    background-color: rgb(31,29,29);
-    width: 100vw;
-    height: 100vh;
+    background: linear-gradient(45deg,blueviolet,lightgreen);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,13 +11,12 @@
     flex-direction: column;
     align-items: center;
     width: 50%;
+    padding: 2rem;
 }
 .joinContainer h1{
     color:#fff;
-    font-size:4vmax;
-    border-bottom: 0.2vmax solid white; 
-    padding: 1vmax;
-    text-align: center;
+    font-size:4rem;
+    border-bottom: 0.1rem solid white;
 }
 #joinInput{
     width: 22vmax;
@@ -26,7 +24,7 @@
     border: none;
     font-size: 1.2vmax;
     outline: none;
-    margin: 15px;
+    margin: 15px 0;
 }
 .LoginBtn{
     cursor: pointer;

@@ -14,7 +14,7 @@ const Join = () => {
     <div className="joinPage">
       <div className="joinContainer">
        <h1>CHAT APP</h1>
-       <input placeholder="Enter your Name" id="joinInput" type="name" onChange={(e)=>setName(e.target.value)} />
+       <input name='name' placeholder="Enter your Name" id="joinInput" type="name" onChange={(e)=>setName(e.target.value)} />
       <Link  onClick={(e)=>name===""? e.preventDefault():null} to="/chat">
         <button onClick={sendUser}className="LoginBtn">Log In</button>
         </Link> 
